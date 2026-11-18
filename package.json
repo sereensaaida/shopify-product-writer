@@ -1,0 +1,19 @@
+{
+  "name": "shopify-ai-product-writer",
+  "version": "1.0.0",
+  "description": "CLI that uses the Claude API to write Shopify product copy (description, SEO, tags), generates a Liquid theme section, and can push the copy to a store through the Admin GraphQL API.",
+  "type": "module",
+  "bin": { "product-writer": "src/cli.js" },
+  "scripts": {
+    "generate": "node src/cli.js generate",
+    "push": "node src/cli.js push",
+    "section": "node src/cli.js section",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "dotenv": "^16.4.5"
+  }
+}
